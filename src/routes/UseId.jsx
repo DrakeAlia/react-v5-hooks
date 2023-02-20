@@ -1,5 +1,9 @@
 import { useId } from 'react';
 
+// useId is useful in that it will give us back a unique identifier that will be consistent, in this case within this label input pair and then can be used multiple times across various different renders
+
+// Don't use uesId multiple times inside of one component because it's not necessary
+
 function LabelInputPair() {
   const id = useId();
   return (

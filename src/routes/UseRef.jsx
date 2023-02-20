@@ -1,6 +1,10 @@
 import { memo, useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
+// useRef allows you to have a container so that so that you can have the same value between renders. 90% of use case for refs referring directly to the DOM and you want to keep ahold of that. 
+
+// Example being that you have some sort animation frame that you're keeping track of, where that the particular object that you're referring to has to be the same one 
+
 const UseRefMemo = memo(function UseRef() {
   const renderTarget = useRef();
 

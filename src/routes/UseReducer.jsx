@@ -1,5 +1,7 @@
 import { useReducer } from 'react';
 
+// A reducer is just a fancy way of saying I have a function, that function takes in a bit of state. It takes an action and it gives you back a new bit of state
+
 // fancy logic to make sure the number is between 0 and a max
 const limit100 = (num, max) => (num < 0 ? 0 : num > max ? max : num);
 

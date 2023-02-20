@@ -1,6 +1,8 @@
 import { useEffect, useState, useMemo } from 'react';
 import expensiveMathOperation from './expensiveMathOperation';
 
+// useMemo is uesd in that you give it a function to recalculate something and then you tell it when to recalculate so in this example only recalculate when the count is different, and the only way we make count different is clicking the plus button
+
 export default function Home() {
   const [count, setCount] = useState(35);
   const [left, setLeft] = useState(0);
